@@ -15,10 +15,19 @@
 
 
     <script type="application/javascript">
-      var canvas = document.getElementById("game-canvas");
-      var ctx = canvas.getContext("2d");
-      game = new Solaroids.Game()
-      game.addSolaroids();
+      var canvasEl = document.getElementById("game-canvas");
+      var ctx = canvasEl.getContext("2d");
+      canvasEl.height = 800;
+      canvasEl.width = 800;
+      ctx.beginPath();
+      ctx.arc(
+        50,50,50,0,Math.PI,false
+      );
+      game = new Solaroids.Game(
+        canvasEl.width,
+        canvasEl.height,
+        10
+      )
       gameView = new Solaroids.GameView(game, ctx);
       gameView.start();
 
