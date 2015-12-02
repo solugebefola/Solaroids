@@ -17,12 +17,8 @@
     <script type="application/javascript">
       var canvasEl = document.getElementById("game-canvas");
       var ctx = canvasEl.getContext("2d");
-      canvasEl.height = 800;
-      canvasEl.width = 800;
-      ctx.beginPath();
-      ctx.arc(
-        50,50,50,0,Math.PI,false
-      );
+      canvasEl.height = window.innerHeight;
+      canvasEl.width = window.innerWidth;
       game = new Solaroids.Game(
         canvasEl.width,
         canvasEl.height,
