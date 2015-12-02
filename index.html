@@ -17,8 +17,11 @@
     <script type="application/javascript">
       var canvas = document.getElementById("game-canvas");
       var ctx = canvas.getContext("2d");
-      Solaroids.Game.addSolaroids();
-      gameView = Solaroids.GameView
+      game = new Solaroids.Game()
+      game.addSolaroids();
+      gameView = new Solaroids.GameView(game, ctx);
+      gameView.start();
+
     </script>
   </body>
 </html>
