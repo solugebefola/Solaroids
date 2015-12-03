@@ -8,17 +8,24 @@
     <script src="lib/solaroid.js"></script>
     <script src="lib/game.js"></script>
     <script src="lib/gameView.js"></script>
+    <script src="lib/ship.js"></script>
 
   </head>
   <body>
     <canvas id="game-canvas"></canvas>
-
+    <div style="display:none">
+      <img id="ship" src="lib/images/ship.png">
+      <img id="ship_thrust" src="lib/images/ship_thrust.png">
+    </div>
 
     <script type="application/javascript">
       var canvasEl = document.getElementById("game-canvas");
-      var ctx = canvasEl.getContext("2d");
       canvasEl.height = window.innerHeight;
       canvasEl.width = window.innerWidth;
+      var ship = document.getElementById("ship");
+      var ctx = canvasEl.getContext("2d");
+      var shippy = new Solaroids.Ship({pos: [500,500],vel:[0,0],radius: 10, color: "#000000"});
+      shippy.draw(ctx, ship);
       game = new Solaroids.Game(
         canvasEl.width,
         canvasEl.height,
