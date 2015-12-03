@@ -9,7 +9,7 @@
     <script src="lib/game.js"></script>
     <script src="lib/gameView.js"></script>
     <script src="lib/ship.js"></script>
-    <script src="keymaster.js"></script>
+    <script src="keymaster/keymaster.js"></script>
 
   </head>
   <body>
@@ -23,10 +23,7 @@
       var canvasEl = document.getElementById("game-canvas");
       canvasEl.height = window.innerHeight;
       canvasEl.width = window.innerWidth;
-      var ship = document.getElementById("ship");
       var ctx = canvasEl.getContext("2d");
-      var shippy = new Solaroids.Ship({pos: [500,500],vel:[0,0],radius: 10, color: "#000000"});
-      shippy.draw(ctx, ship);
       game = new Solaroids.Game(
         canvasEl.width,
         canvasEl.height,
