@@ -10,6 +10,7 @@
     <script src="lib/gameView.js"></script>
     <script src="lib/ship.js"></script>
     <script src="lib/beam.js"></script>
+    <script src="lib/asteroid.js"></script>
     <script src="keymaster/keymaster.js"></script>
 
   </head>
@@ -23,7 +24,8 @@
       game = new Solaroids.Game(
         canvasEl.width,
         canvasEl.height,
-        30 
+        30,
+        10
       )
       gameView = new Solaroids.GameView(game, ctx);
       gameView.start();
