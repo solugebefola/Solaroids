@@ -12,6 +12,19 @@
     <script src="lib/beam.js"></script>
     <script src="lib/asteroid.js"></script>
     <script src="keymaster/keymaster.js"></script>
+    <style>
+      body, html {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        border: 0;
+        overflow: hidden;
+      }
+      canvas {
+        position: absolute;
+      }
+    </style>
 
   </head>
   <body>
@@ -24,8 +37,8 @@
       game = new Solaroids.Game(
         canvasEl.width,
         canvasEl.height,
-        30,
-        10
+        1,
+        1
       )
       gameView = new Solaroids.GameView(game, ctx);
       gameView.start();

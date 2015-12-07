@@ -1,5 +1,5 @@
 # Solaroids!
-The [weiiiirdest](solugebefola.github.io/Solaroids) game of asteroids that you have played in the last week.  Solaroids is Built using Javascript, Canvas and it incorporates madrobby's  [keymaster.js](https://github.com/madrobby/keymaster) library.
+The [weiiiirdest](solugebefola.github.io/Solaroids) game of asteroids that you have played in the last week.  Solaroids is Built using Javascript and HTML's Canvas. It incorporates madrobby's  [keymaster.js](https://github.com/madrobby/keymaster) library.
 ## How to play
 #### Ship
 ![Ship](lib/images/ship.png)
