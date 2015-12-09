@@ -13,7 +13,7 @@ You are a small retro-sprite ship with some basic abilities.
 #### Asteroids
 ![Asteroid](lib/images/asteroid1.png)
 
-They are also retro-spritely, but not retro-friendly. If you collide with one, that's it. Game over.  So don't do it!  Shoot them instead, classic asteroids style.
+They are also retro-spritely, but not retro-friendly. If you collide with one, that's it. Game over.  So don't do it!  Shoot them instead, classic asteroids style.  The larger they are, the more beaming it takes to destroy them.
 
 #### Solaroids (yes, they exist!)
 _(mysteriously, no recorded image)_
