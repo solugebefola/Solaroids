@@ -21,3 +21,9 @@ _(mysteriously, no recorded image)_
 These are harmless spheres of expanding 'nearly intangible matter'.  If you shoot them, they will shrink, and if they get small enough, they will disappear, otherwise they will keep expanding again. '_but wait!_' you say 'if they are so harmless, why should I care?'
 
 '__AHA!__' I reply.  The Solaroids obscure your vision so you can't see yourself _or_ the asteroids.  If they fill the screen, it's going to be hard to survive...
+
+##### Background image
+
+Credit:
+ESA/Hubble & NASA
+Acknowledgement: Josh Barrington
