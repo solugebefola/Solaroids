@@ -35,14 +35,29 @@
       canvasEl.height = window.innerHeight;
       canvasEl.width = window.innerWidth;
       var ctx = canvasEl.getContext("2d");
-      game = new Solaroids.Game(
+      var game = new Solaroids.Game(
         canvasEl.width,
         canvasEl.height,
         20,
         20
       )
-      gameView = new Solaroids.GameView(game, ctx);
+      var gameView = new Solaroids.GameView(game, ctx);
       gameView.start();
+      key("p", function () {
+        if(game.over) {
+          console.log(gameView.intervalID);
+          clearInterval(gameView.intervalID);
+          game = new Solaroids.Game(
+            canvasEl.width,
+            canvasEl.height,
+            20,
+            20
+          );
+          gameView = new Solaroids.GameView(game, ctx);
+          gameView.start();
+          return false;
+        }
+      }.bind(this));
 
     </script>
   </body>
